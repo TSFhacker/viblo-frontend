@@ -1,0 +1,100 @@
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #495057;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 900px;
+  animation-duration: 1s;
+  animation-name: slidein;
+  overflow: hidden;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 900px;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 900px;
+  }
+}
+
+.img-container {
+  height: 100vh;
+
+  background-image: url("../../public/login3-img.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.register-section {
+  width: 450px;
+  position: absolute;
+  top: 22%;
+  transform: translateX(60px);
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.button {
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 600;
+  background-color: #6675df;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #525eb2;
+}
+
+.form {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.OR {
+  margin-bottom: 20px;
+}
+
+.login:link,
+.login:visited {
+  font-size: 20px;
+  text-decoration: none;
+  color: #6675df;
+}
+
+.login:hover,
+.login:active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  color: #6675df;
+}
